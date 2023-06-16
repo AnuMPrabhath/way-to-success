@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="supplierForm" prefHeight="800.0" prefWidth="1100.0" style="-fx-background-color: #dfe4ea;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.waytosuccess.controller.SupplierMainFormController">
+    <children>
+        <Pane layoutX="26.0" layoutY="14.0" prefHeight="320.0" prefWidth="780.0" styleClass="pane" stylesheets="@../style/style.css">
+            <children>
+                <Label layoutX="50.0" layoutY="20.0" prefHeight="47.0" prefWidth="298.0" styleClass="lebal" stylesheets="@../style/style.css" text="Supplier Details" textFill="#2200ff" />
+                <JFXTextField fx:id="txtSupplierId" labelFloat="true" layoutX="50.0" layoutY="120.0" prefHeight="50.0" prefWidth="300.0" promptText="Supplier Id">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="txtSupplierName" labelFloat="true" layoutX="50.0" layoutY="210.0" prefHeight="50.0" prefWidth="300.0" promptText="Supplier Name">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="txtSupplierCompany" labelFloat="true" layoutX="451.0" layoutY="121.0" prefHeight="50.0" prefWidth="300.0" promptText="Company">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="txtSupplierContact" labelFloat="true" layoutX="450.0" layoutY="211.0" prefHeight="50.0" prefWidth="300.0" promptText="Contact">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </JFXTextField>
+            </children>
+        </Pane>
+        <Pane layoutX="32.0" layoutY="450.0" prefHeight="334.0" prefWidth="1040.0" styleClass="pane" stylesheets="@../style/style.css">
+            <children>
+                <TableView fx:id="tblSupplier" layoutX="24.0" layoutY="23.0" onMouseClicked="#clickTblCol" prefHeight="288.0" prefWidth="990.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;">
+                    <columns>
+                        <TableColumn fx:id="colSupplierId" prefWidth="157.0" text="Supplier Id" />
+                        <TableColumn fx:id="colSupplierName" prefWidth="268.0" text="Name" />
+                        <TableColumn fx:id="colSupplierCompany" prefWidth="321.0" text="Company" />
+                        <TableColumn fx:id="colSupplierContact" prefWidth="243.0" text="Contact" />
+                    </columns>
+                </TableView>
+            </children>
+        </Pane>
+        <Pane layoutX="32.0" layoutY="345.0" prefHeight="92.0" prefWidth="430.0" styleClass="pane" stylesheets="@../style/style.css">
+            <children>
+                <JFXTextField fx:id="txtSearchSupplier" labelFloat="true" layoutX="101.0" layoutY="18.0" onKeyReleased="#searchSupplier" prefHeight="56.0" prefWidth="300.0" promptText="Search by Supplier Id">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </JFXTextField>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="32.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/Search.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <JFXButton fx:id="btnAddSupplier" layoutX="821.0" layoutY="21.0" onAction="#addSupplier" prefHeight="42.0" prefWidth="270.0" style="-fx-background-color: #5045f1;" styleClass="newBtn" stylesheets="@../style/style.css" text="Add New Supplier" textFill="WHITE">
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Add.png" />
+               </image></ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXButton fx:id="btnUpdateSupplier" layoutX="821.0" layoutY="101.0" onAction="#updateSupplier" prefHeight="40.0" prefWidth="270.0" style="-fx-background-color: #ff9f1a;" styleClass="newBtn" stylesheets="@../style/style.css" text="Update Supplier" textFill="WHITE">
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/Update.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXButton fx:id="btnDeleteSupplier" layoutX="821.0" layoutY="185.0" onAction="#deleteSupplier" prefHeight="40.0" prefWidth="270.0" style="-fx-background-color: #ff3838;" styleClass="newBtn" stylesheets="@../style/style.css" text="Delete Supplier" textFill="WHITE">
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/Delete.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+      <JFXButton fx:id="btnClearDetails" layoutX="821.0" layoutY="268.0" onAction="#clearDetails" prefHeight="23.0" prefWidth="270.0" style="-fx-background-color: F6BA6F;" styleClass="newBtn" stylesheets="@../style/style.css" text="Clear Details" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Clear.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+    </children>
+</AnchorPane>

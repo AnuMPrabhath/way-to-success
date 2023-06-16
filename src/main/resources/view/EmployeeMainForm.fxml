@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.waytosuccess.controller.EmployeeMainFormController">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="1100.0" style="-fx-background-color: #dfe4ea;">
+         <children>
+            <Pane layoutX="25.0" layoutY="19.0" prefHeight="320.0" prefWidth="780.0" styleClass="pane" stylesheets="@../style/style.css">
+               <children>
+                  <Label layoutX="20.0" layoutY="26.0" prefHeight="47.0" prefWidth="298.0" styleClass="lebal" stylesheets="@../style/style.css" text="Employee Details" textFill="#0d00ff" />
+                  <JFXTextField fx:id="txtEmpId" labelFloat="true" layoutX="50.0" layoutY="120.0" prefHeight="50.0" prefWidth="300.0" promptText="Employee Id">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtEmpName" labelFloat="true" layoutX="50.0" layoutY="210.0" prefHeight="50.0" prefWidth="300.0" promptText="Employee Name">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtEmpContact" labelFloat="true" layoutX="451.0" layoutY="120.0" prefHeight="50.0" prefWidth="300.0" promptText="Contact">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtEmpAddress" labelFloat="true" layoutX="451.0" layoutY="210.0" prefHeight="50.0" prefWidth="300.0" promptText="Address">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXTextField>
+                  <DatePicker fx:id="txtEmpDate" layoutX="451.0" layoutY="34.0" prefHeight="41.0" prefWidth="298.0" promptText="Date" />
+               </children>
+            </Pane>
+            <Pane layoutX="25.0" layoutY="463.0" prefHeight="320.0" prefWidth="1050.0" styleClass="pane" stylesheets="@../style/style.css">
+               <children>
+                  <TableView fx:id="tblEmployee" layoutX="33.0" layoutY="17.0" onMouseClicked="#clickTblCol" prefHeight="278.0" prefWidth="987.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;">
+                     <columns>
+                        <TableColumn fx:id="colEmpId" prefWidth="156.0" text="Employee Id" />
+                        <TableColumn fx:id="colEmpName" prefWidth="221.0" text="Name" />
+                        <TableColumn fx:id="colEmpContact" prefWidth="197.0" text="Contact" />
+                        <TableColumn fx:id="colEmpAddress" prefWidth="220.0" text="Address" />
+                        <TableColumn fx:id="colEmpDate" prefWidth="192.0" text="Date" />
+                     </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <Pane layoutX="25.0" layoutY="355.0" prefHeight="90.0" prefWidth="430.0" styleClass="pane" stylesheets="@../style/style.css">
+               <children>
+                  <JFXTextField fx:id="txtSearchEmployee" labelFloat="true" layoutX="108.0" layoutY="17.0" onKeyReleased="#searchEmployee" prefHeight="56.0" prefWidth="283.0" promptText="Search by Employee Id">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXTextField>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="35.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Search.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <JFXButton fx:id="btnAddEmp" layoutX="816.0" layoutY="19.0" onAction="#addEmployee" prefHeight="35.0" prefWidth="270.0" style="-fx-background-color: #5045f1;" styleClass="newBtn" stylesheets="@../style/style.css" text="Add Employee" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnUpdateEmp" layoutX="816.0" layoutY="101.0" onAction="#updateEmployee" prefHeight="34.0" prefWidth="270.0" style="-fx-background-color: #ff9f1a;" styleClass="newBtn" stylesheets="@../style/style.css" text="Update Employee" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Update.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnDeleteEmp" layoutX="823.0" layoutY="187.0" onAction="#deleteEmployee" prefHeight="29.0" prefWidth="270.0" style="-fx-background-color: #ff3838;" styleClass="newBtn" stylesheets="@../style/style.css" text="Delete Employee" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnClearDetails" layoutX="823.0" layoutY="280.0" onAction="#clearDetails" prefHeight="29.0" prefWidth="270.0" style="-fx-background-color: F6BA6F;" styleClass="newBtn" stylesheets="@../style/style.css" text="Clear Details" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Clear.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

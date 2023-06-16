@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="1100.0" styleClass="BackGround2" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.waytosuccess.controller.StartDashBordFormController">
+   <children>
+      <ImageView fitHeight="733.0" fitWidth="1100.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Wallpaper.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="586.0" layoutY="446.0" prefHeight="288.0" prefWidth="326.0" styleClass="pane" stylesheets="@../style/style.css">
+         <children>
+            <Label fx:id="lblTime" layoutX="55.0" layoutY="38.0" prefHeight="83.0" prefWidth="232.0" styleClass="lebal" stylesheets="@../style/style.css" text="Time" textFill="#2100a4" />
+            <Label fx:id="lblDate" layoutX="47.0" layoutY="144.0" prefHeight="89.0" prefWidth="232.0" styleClass="lebal" stylesheets="@../style/style.css" text="Date" textFill="#1600a4" />
+         </children>
+      </Pane>
+      <Pane layoutX="60.0" layoutY="58.0" prefHeight="98.0" prefWidth="469.0" styleClass="pane" stylesheets="@../style/style.css">
+         <children>
+            <Label fx:id="lblCudCount" contentDisplay="CENTER" layoutX="280.0" layoutY="19.0" prefHeight="61.0" prefWidth="122.0" styleClass="lebal" stylesheets="@../style/style.css" text="Label" />
+            <Label layoutX="14.0" layoutY="19.0" prefHeight="61.0" prefWidth="266.0" styleClass="lebal" stylesheets="@../style/style.css" text="Customer Count :" textFill="#4400ff" />
+         </children>
+      </Pane>
+      <Pane layoutX="586.0" layoutY="180.0" prefHeight="98.0" prefWidth="469.0" styleClass="pane" stylesheets="@../style/style.css">
+         <children>
+            <Label fx:id="lblSupCount" layoutX="273.0" layoutY="19.0" prefHeight="61.0" prefWidth="122.0" styleClass="lebal" stylesheets="@../style/style.css" text="Label" />
+            <Label layoutX="14.0" layoutY="19.0" prefHeight="61.0" prefWidth="259.0" styleClass="lebal" stylesheets="@../style/style.css" text="Supplier Count : " textFill="#2f00ff" />
+         </children>
+      </Pane>
+      <Pane layoutX="586.0" layoutY="58.0" prefHeight="98.0" prefWidth="469.0" styleClass="pane" stylesheets="@../style/style.css">
+         <children>
+            <Label fx:id="lblEmpCount" layoutX="280.0" layoutY="19.0" prefHeight="61.0" prefWidth="122.0" styleClass="lebal" stylesheets="@../style/style.css" text="Label" />
+            <Label layoutX="26.0" layoutY="19.0" prefHeight="61.0" prefWidth="266.0" styleClass="lebal" stylesheets="@../style/style.css" text="Employee Count : " textFill="#7300ff" />
+         </children>
+      </Pane>
+      <Pane layoutX="60.0" layoutY="180.0" prefHeight="98.0" prefWidth="469.0" styleClass="pane" stylesheets="@../style/style.css">
+         <children>
+            <Label fx:id="lblOrderCount" layoutX="273.0" layoutY="19.0" prefHeight="61.0" prefWidth="122.0" styleClass="lebal" stylesheets="@../style/style.css" text="Label" />
+            <Label layoutX="14.0" layoutY="19.0" prefHeight="61.0" prefWidth="259.0" styleClass="lebal" stylesheets="@../style/style.css" text="Order Count : " textFill="#1e00ff" />
+         </children>
+      </Pane>
+      <Pane layoutX="586.0" layoutY="302.0" prefHeight="98.0" prefWidth="469.0" styleClass="pane" stylesheets="@../style/style.css">
+         <children>
+            <Label fx:id="lblItemCount" layoutX="273.0" layoutY="19.0" prefHeight="61.0" prefWidth="122.0" styleClass="lebal" stylesheets="@../style/style.css" text="Label" />
+            <Label layoutX="14.0" layoutY="19.0" prefHeight="61.0" prefWidth="259.0" styleClass="lebal" stylesheets="@../style/style.css" text="Item Count : " textFill="#1e00ff" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="295.0" fitWidth="223.0" layoutX="863.0" layoutY="487.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/worker-removebg-preview.png" />
+         </image>
+      </ImageView>
+
+   </children>
+</AnchorPane>

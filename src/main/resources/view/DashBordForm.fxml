@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="1500.0" styleClass="BackGround2" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.waytosuccess.controller.DashBordFormController">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="400.0" styleClass="BackGround" stylesheets="@../style/style.css">
+         <children>
+            <VBox layoutX="31.0" layoutY="166.0" prefHeight="554.0" prefWidth="339.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <children>
+                  <Line endX="178.0" fill="#b91313" layoutX="190.0" layoutY="77.0" startX="-155.3333282470703" strokeWidth="5.0" />
+                  <JFXButton fx:id="mainDashBoardBtn" onAction="#openDashboardForm" prefHeight="66.0" prefWidth="347.0" styleClass="dashBord-btn" stylesheets="@../style/style.css" text="  Dashboard" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/dashboard.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Times New Roman" size="21.0" />
+                     </font>
+                  </JFXButton>
+                  <Line endX="178.58580017089844" endY="0.5857864618301392" fill="#b91313" layoutX="166.0" layoutY="658.0" startX="-155.3333282470703" strokeWidth="2.0" />
+                  <JFXButton fx:id="mainCustomerBtn" layoutX="10.0" layoutY="10.0" onAction="#openCustomerDashBord" prefHeight="66.0" prefWidth="354.0" styleClass="dashBord-btn" stylesheets="@../style/style.css" text="  Customer" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/customer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Line endX="178.58580017089844" fill="#b91313" layoutX="166.0" layoutY="332.0" startX="-155.3333282470703" strokeWidth="2.0" />
+                  <JFXButton fx:id="mainPlaceOrderBtn" layoutX="10.0" layoutY="100.0" onAction="#openPlaceOrderForm" prefHeight="66.0" prefWidth="360.0" styleClass="dashBord-btn" stylesheets="@../style/style.css" text="  Place Order" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/order-cart.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Line endX="178.25245666503906" fill="#b91313" startX="-155.3333282470703" strokeWidth="2.0" />
+                  <JFXButton fx:id="mainReturnBtn" layoutX="10.0" layoutY="200.0" onAction="#openReturnItemForm" prefHeight="66.0" prefWidth="381.0" styleClass="dashBord-btn" stylesheets="@../style/style.css" text="  Return Item" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/return.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Line endX="178.58580017089844" fill="#b91313" layoutX="166.0" layoutY="248.0" startX="-155.3333282470703" strokeWidth="2.0" />
+                  <JFXButton fx:id="mainEmployeeBtn" layoutX="10.0" layoutY="300.0" onAction="#openEmployeeForm" prefHeight="66.0" prefWidth="377.0" styleClass="dashBord-btn" stylesheets="@../style/style.css" text="  Employee" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/employee.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Line endX="178.9191131591797" fill="#b91313" layoutX="166.0" layoutY="658.0" startX="-155.3333282470703" strokeWidth="2.0" />
+                  <JFXButton fx:id="mainSupplierBtn" layoutX="10.0" layoutY="400.0" onAction="#openSupplierForm" prefHeight="66.0" prefWidth="410.0" styleClass="dashBord-btn" stylesheets="@../style/style.css" text="  Supplier" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/supplier-order.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Line endX="178.58580017089844" fill="#b91313" layoutX="166.0" layoutY="335.0" startX="-155.3333282470703" strokeWidth="2.0" />
+                  <JFXButton fx:id="mainItemBtn" layoutX="10.0" layoutY="500.0" onAction="#openItemForm" prefHeight="66.0" prefWidth="370.0" styleClass="dashBord-btn" stylesheets="@../style/style.css" text="   Item" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/item.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Line endX="180.9191131591797" fill="#b91313" layoutX="166.0" layoutY="499.0" startX="-155.3333282470703" strokeWidth="2.0" />
+                  <JFXButton fx:id="mainServiceBtn" layoutX="10.0" layoutY="600.0" onAction="#openServiceForm" prefHeight="66.0" prefWidth="373.0" styleClass="dashBord-btn" stylesheets="@../style/style.css" text="  Service" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/service.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Line endX="178.4644775390625" fill="#b91313" layoutX="166.0" layoutY="658.0" startX="-155.3333282470703" strokeWidth="5.0" />
+               </children>
+            </VBox>
+            <ImageView fitHeight="145.0" fitWidth="114.0" layoutX="279.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/worker-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="34.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Serif;" styleClass="title" text="BICYCLE WORK &amp; SHOP" wrappingWidth="270.33756256103516" />
+            <Line endX="174.0" fill="#b91313" layoutX="193.0" layoutY="148.0" startX="-160.3333282470703" strokeWidth="5.0" />
+            <JFXButton fx:id="LogoutBtn" layoutX="87.0" layoutY="734.0" onAction="#logoutAccount" prefHeight="52.0" prefWidth="226.0" styleClass="dashBord-btn" stylesheets="@../style/style.css" text="Logout" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/log-out.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="rootChange" layoutX="400.0" prefHeight="800.0" prefWidth="1100.0" />
+   </children>
+</AnchorPane>
